@@ -1,0 +1,212 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/melissa-cosmetics.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": ["slideshow-0"],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": ["div {padding-bottom: 0px;}"],
+      "settings": {}
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "6f40a2ec-bc2d-44f1-9243-49ba159a647c": {
+          "type": "heading",
+          "settings": {
+            "title": "The story of MGC"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>My love for beauty began in the modest coastal town of Wollongong, where I was captivated by the joy of enhancing how people felt about themselves. This passion quickly evolved from offering makeovers to friends and family for their special occasions, to a deep-seated desire to pursue this path professionally.</p><p>I decided to fully immerse myself in the world of beauty and took a significant leap by enrolling in a Sydney makeup academy. There, I mastered the nuanced art of makeup artistry, sharpening my skills and defining my style. This experience didn't just refine my abilities; it redefined what I believed makeup could do.</p>"
+          }
+        }
+      },
+      "block_order": ["6f40a2ec-bc2d-44f1-9243-49ba159a647c", "text"],
+      "custom_css": [],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "2e663a02-afa1-4068-a2d2-acc3590f8217": {
+      "type": "promo-grid",
+      "blocks": {
+        "template--16114092179631__2e663a02-afa1-4068-a2d2-acc3590f8217-advanced-1": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/MG_Cosmetics_2.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 600,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "27d3fd2a-563b-4b9f-967c-aaaa5493f18e": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "textarea": "",
+            "cta_text1": "",
+            "cta_link1": "",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/MG_Cosmetics_1.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 600,
+            "text_size": 100,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "rgba(0,0,0,0)",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16114092179631__2e663a02-afa1-4068-a2d2-acc3590f8217-advanced-1",
+        "27d3fd2a-563b-4b9f-967c-aaaa5493f18e"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "7f124c06-1d81-4159-b4a4-cbab952e4653": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16114092179631__7f124c06-1d81-4159-b4a4-cbab952e4653-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Now, with over twenty years under my belt, I am humbled to be recognised as a leading figure in the Australian beauty industry. My work, which has adorned the pages of Vogue and Australian Woman’s Weekly, added glamour to top-rated TV shows, and lit up red carpets, is a testament to the dedication I've poured into my craft. And as my brand, Melissa Gigliotti Cosmetics, garners international acclaim, I am reminded daily of why I started this journey.</p><p>To me, Melissa Gigliotti Cosmetics is far more than a business—it's the embodiment of my lifelong devotion to beauty. I believe makeup is a powerful form of self-expression and empowerment, a means for every individual to celebrate their unique beauty and feel confident in their skin. This belief didn't just inspire my cosmetics line; it's the very foundation upon which it was created. </p><p><strong>Each product is a love letter to those who wear it, inviting them to not only look their best but to feel their best.</strong></p><p></p><p>xx</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16114092179631__7f124c06-1d81-4159-b4a4-cbab952e4653-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "e9e4fdab-7316-4014-8202-e439259b7224": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "lips",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "face",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "restorative-masks",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "lip-gloss",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-2",
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-1",
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-3",
+        "template--16114092179631__e9e4fdab-7316-4014-8202-e439259b7224-collection-4"
+      ],
+      "settings": {
+        "title": "MGC collections",
+        "divider": false,
+        "per_row": 2,
+        "enable_gutter": true
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "main",
+    "rich-text",
+    "2e663a02-afa1-4068-a2d2-acc3590f8217",
+    "7f124c06-1d81-4159-b4a4-cbab952e4653",
+    "e9e4fdab-7316-4014-8202-e439259b7224"
+  ]
+}

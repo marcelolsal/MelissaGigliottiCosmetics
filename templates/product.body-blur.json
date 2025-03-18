@@ -1,0 +1,170 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "939d4a59-393b-418d-a709-ca689e51c6b5": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "73776a25-b7d4-4253-8569-e04672bc03d3": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "adedeeb3-b5fb-40e9-a2a5-8e1ecb8774d0": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 4,
+            "inventory_transfers_enable": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "dc88bc25-24e3-4af0-9eb9-039017505ef1": {
+          "type": "complementary_products",
+          "settings": {
+            "product_complementary_heading": "Pair it with",
+            "complementary_count": 2,
+            "per_slide": 2,
+            "control_type": "arrows",
+            "image_style": "circle"
+          }
+        },
+        "b50df408-8f59-4800-9ef8-a03b4effd8ac": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "939d4a59-393b-418d-a709-ca689e51c6b5",
+        "price",
+        "separator",
+        "variant_picker",
+        "73776a25-b7d4-4253-8569-e04672bc03d3",
+        "adedeeb3-b5fb-40e9-a2a5-8e1ecb8774d0",
+        "buy_buttons",
+        "description",
+        "dc88bc25-24e3-4af0-9eb9-039017505ef1",
+        "b50df408-8f59-4800-9ef8-a03b4effd8ac",
+        "contact",
+        "share"
+      ],
+      "custom_css": [
+        "div.jdgm-prev-badge {padding-bottom: 10px;}",
+        ".sales-point {font-style: italic;}"
+      ],
+      "settings": {
+        "sku_enable": false,
+        "image_position": "left",
+        "image_size": "medium",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": true,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "1697708398423d6375": {
+      "type": "apps",
+      "blocks": {
+        "c8c1acf1-520f-4193-ade3-e1e4afe81cb1": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": ["c8c1acf1-520f-4193-ade3-e1e4afe81cb1"],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 3,
+        "products_per_row": 3
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 3
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1697708398423d6375",
+    "product-recommendations",
+    "recently-viewed",
+    "collection-return",
+    "sub"
+  ]
+}

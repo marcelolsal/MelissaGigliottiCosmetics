@@ -1,0 +1,90 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "22cb7c9a-b214-49a6-9c29-126a48a70dfa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16004505469103__22cb7c9a-b214-49a6-9c29-126a48a70dfa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "The Ultimate Beauty Collection for Every Skin Tone"
+          }
+        }
+      },
+      "block_order": [
+        "template--16004505469103__22cb7c9a-b214-49a6-9c29-126a48a70dfa-heading-1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "main": {
+      "type": "list-collections-template",
+      "blocks": {
+        "65a50137-9772-4423-b6c3-2f6ea479e416": {
+          "type": "collection",
+          "settings": {
+            "collection": "lipsticks"
+          }
+        },
+        "8bab84e3-dd9b-40df-9ebe-489ae77b1929": {
+          "type": "collection",
+          "settings": {
+            "collection": "lip-glosses"
+          }
+        },
+        "0435b49e-f3ec-4fbc-85bb-410894311497": {
+          "type": "collection",
+          "settings": {
+            "collection": "lip-liners"
+          }
+        },
+        "a6eeca6f-aaa7-4f86-bc0a-1989ff1006f1": {
+          "type": "collection",
+          "settings": {
+            "collection": "face"
+          }
+        },
+        "676acef0-ae25-42ad-99c2-35c0acba66e0": {
+          "type": "collection",
+          "settings": {
+            "collection": "lip-gloss"
+          }
+        },
+        "collection_CRLACV": {
+          "type": "collection",
+          "settings": {
+            "collection": "body"
+          }
+        }
+      },
+      "block_order": [
+        "65a50137-9772-4423-b6c3-2f6ea479e416",
+        "8bab84e3-dd9b-40df-9ebe-489ae77b1929",
+        "0435b49e-f3ec-4fbc-85bb-410894311497",
+        "a6eeca6f-aaa7-4f86-bc0a-1989ff1006f1",
+        "676acef0-ae25-42ad-99c2-35c0acba66e0",
+        "collection_CRLACV"
+      ],
+      "custom_css": ["div {padding-top: 0px;}"],
+      "settings": {
+        "title_enable": false,
+        "display_type": "selected",
+        "sort": "alphabetical",
+        "grid": "2"
+      }
+    }
+  },
+  "order": ["22cb7c9a-b214-49a6-9c29-126a48a70dfa", "main"]
+}

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/
+.husky/
+.eslintrc.json
+assets/vendor-scripts-v11.js
+assets/**.svg.liquid

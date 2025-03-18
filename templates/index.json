@@ -1,0 +1,581 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "IT's Arrived!",
+            "title": "Body Blur",
+            "title_size": 80,
+            "subheading": "Say goodbye to imperfections and hello to radiant, even-toned skin.",
+            "link": "shopify://products/body-blur",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#1c1d1d",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Body.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 14
+          }
+        },
+        "image_gGPrAd": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "THEY'RE BACK!",
+            "title": "Lipstick +\nLiner Bundle",
+            "title_size": 80,
+            "subheading": "Get the perfect pout",
+            "link": "https://melissagigliotticosmetics.com.au/a/bundles/lipstick-+-liner-bundle-atwd",
+            "link_text": "SHOP NOW",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Lipstick_Liner_Bundle.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 12
+          }
+        },
+        "image_VLXgQ8": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Discover streamlined shades",
+            "title": "High-performance \nmakeup",
+            "title_size": 80,
+            "subheading": "Take the guesswork out of choosing the best colour for you.",
+            "link": "shopify://collections/all",
+            "link_text": "Explore products",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#1c1d1d",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/MELGCOSMETICS-213-Edit_ad21c735-7034-4102-b7a9-0a6788134d32.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 16
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "IT’S TIME TO SHINE",
+            "title": "ULTRA-SHINY LIP GLOSS IS BACK",
+            "title_size": 80,
+            "subheading": "EXTRA SHINE + EXTRA PLUMP = EXTRA FABULOUS",
+            "link": "shopify://collections/multidimensional-high-shine-gloss",
+            "link_text": "Sheer High Shine Gloss",
+            "link_2": "shopify://collections/all",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/MG_Cosmetics_Ultra_Shiny_Lip_Gloss.jpg",
+            "image_mobile": "shopify://shop_images/MG_Cosmetics_Ultra_Shiny_Lip_Gloss_Mobile.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 10
+          }
+        },
+        "image_m4PwtJ": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "ULTRA-SHINY LIP GLOSS",
+            "title": "LET YOUR LIPS \nDO THE TALKING",
+            "title_size": 80,
+            "subheading": "MAXIMUM SHINE + VOLUMISING PLUMP = NEXT-LEVEL GLAM",
+            "link": "shopify://collections/multidimensional-high-shine-gloss",
+            "link_text": "Sheer High Shine Gloss",
+            "link_2": "shopify://collections/all",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/MELISSAGCOSMETICS-181-Editlandscape_66a28288-09b5-4c33-b174-7b7504e347e1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "image_gGPrAd",
+        "image_VLXgQ8",
+        "slideshow-1",
+        "image_m4PwtJ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "section_height": "750px",
+        "mobile_height": "100vh",
+        "parallax": false,
+        "style": "minimal",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "About MGC"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Melissa Gigliotti Cosmetics is a premium beauty brand that delivers beauty products with a luxurious feel and professional-grade performance.</p>"
+          }
+        },
+        "0b2cede9-7999-47f7-8ac0-c97aa8722cff": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://collections",
+            "link_text": "Shop All"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "0b2cede9-7999-47f7-8ac0-c97aa8722cff"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo-0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Choose your shade",
+            "heading": "No Fail Nudes",
+            "textarea": "",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify://collections/no-fail-nudes",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_No_Fail_Nudes.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#1c1d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "5eb002b4-c4d0-45a8-a881-4af94055afbe": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Choose your shade",
+            "heading": "Lip glosses",
+            "textarea": "",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify://collections/lip-glosses",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_Lip_glosses.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#1c1d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "da782d70-78d9-4283-b818-276f9d0585e0": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Hot Bright",
+            "heading": "go-to-glam lips",
+            "textarea": "",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify://collections/hot-bright-lipsticks",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_Go_To_Glam_Lips.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#1c1d1d",
+            "boxed": false,
+            "framed": false
+          }
+        },
+        "a5b4ff23-b610-4d17-9398-ea09d2c625e2": {
+          "type": "advanced",
+          "settings": {
+            "subheading": "Choose your shade",
+            "heading": "Flawless Lipliners",
+            "textarea": "",
+            "cta_text1": "Shop This",
+            "cta_link1": "shopify://collections/lip-liners",
+            "cta_text2": "",
+            "cta_link2": "",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_Lip_Liners.jpg",
+            "video_url": "",
+            "width": "50",
+            "height": 800,
+            "text_size": 120,
+            "text_align": "vertical-center horizontal-center",
+            "color_accent": "#1c1d1d",
+            "boxed": false,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "promo-0",
+        "5eb002b4-c4d0-45a8-a881-4af94055afbe",
+        "da782d70-78d9-4283-b818-276f9d0585e0",
+        "a5b4ff23-b610-4d17-9398-ea09d2c625e2"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false,
+        "lazyload_images": true
+      }
+    },
+    "c488a20d-b099-448e-8649-74b1525e2e0f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best sellers",
+        "home_featured_products": "faves",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "fc8ee44e-917e-4298-9798-1d6059b2f3d1": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16004505436335__fc8ee44e-917e-4298-9798-1d6059b2f3d1-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Naked_Sunday_Glow_Mist_Spray_Free_Gift.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16004505436335__fc8ee44e-917e-4298-9798-1d6059b2f3d1-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h4> Naked Sundays Hydrating SPF Glow Mist 50ml</h4><h2>Free Gift With Purchase</h2><p>FOR THE FIRST 20 CUSTOMERS WITH ORDERS OVER $99</p><p>Step into the sunshine with confidence and a radiant glow with Naked Sundays' Hydrating SPF Glow Mist. This innovative, award-winning formula ushers in a revolutionary approach to sun protection. Reapplying SPF has never been so effortless and indulgent.</p><p>Packed with native australian antioxidants, infused with kakadu plum, watermeloan extract & hyaluronic acid, It provides the perfect way to top up your SPF OVER your makeup  or on its own!</P>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16004505436335__fc8ee44e-917e-4298-9798-1d6059b2f3d1-image-1",
+        "template--16004505436335__fc8ee44e-917e-4298-9798-1d6059b2f3d1-liquid-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h4 {font-size: 14px; font-weight: 400;}",
+        "h2 {margin-top: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    },
+    "36f46cc0-93ae-4dc0-a4f9-8b09fe04f958": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16004505436335__36f46cc0-93ae-4dc0-a4f9-8b09fe04f958-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Get your glow on",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify://collections/highlighters",
+            "link_text": "Shop highlighters",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_3.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "template--16004505436335__36f46cc0-93ae-4dc0-a4f9-8b09fe04f958-image-2": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "Create a youthful summer glow",
+            "title": "hello, glowy blush crush",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify://collections/cream-blush",
+            "link_text": "Shop Cream Blushes",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_2.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        },
+        "7b3135ee-0908-43a2-9fa1-850b9a97f3d9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "create a healthy natural glow",
+            "title": "Sun-kissed bronzer shades",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify://collections/bronzers",
+            "link_text": "Bronzers",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/Melissa_Gigliotti_Cosmetics_1.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16004505436335__36f46cc0-93ae-4dc0-a4f9-8b09fe04f958-image-1",
+        "template--16004505436335__36f46cc0-93ae-4dc0-a4f9-8b09fe04f958-image-2",
+        "7b3135ee-0908-43a2-9fa1-850b9a97f3d9"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "400px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "c4a7bd43-488c-484a-b089-f234a4c8c993": {
+      "type": "text-and-image",
+      "custom_css": ["h2 {font-size: 25px;}"],
+      "settings": {
+        "image": "shopify://shop_images/MELGCOSMETICS.jpg",
+        "image_mask": "portrait",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "The ultimate red",
+        "text": "<p>Roll out the red carpet for MG's latest must-have lipstick—Superstar.</p>",
+        "button_label": "Get yours now",
+        "button_link": "shopify://products/the-ultimate-red",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "786eea08-553f-4f46-a4ba-6a8fcaa8e35f": {
+      "type": "text-and-image",
+      "custom_css": ["h2 {font-size: 25px; margin-top: 10px;}"],
+      "settings": {
+        "image": "shopify://shop_images/meliisa-gigliotti_7e0ecae0-e093-4b44-ae02-429a7dfd86e8.jpg",
+        "image_mask": "none",
+        "image2_mask": "portrait",
+        "subtitle": "MEET MELISSA",
+        "title": "CELEBRITY MAKEUP ARTIST MEL GIGLIOTTI HAS TAKEN OUT THE GUESSWORK WITH HER 8-SHADE NO FAIL NUDES LIP COLLECTION.",
+        "text": "<p>Each nude shade has been carefully curated from her years of makeup experience and lovingly formulated with the intense colour payoff for a polished, long-wearing pout.</p>",
+        "button_label": "Get yours now",
+        "button_link": "shopify://collections/no-fail-nudes",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "e2115bd7-c7be-4c67-a22e-42066d0d119b": {
+      "type": "logo-list",
+      "blocks": {
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/MGC_Sustainability_In_Mind.png",
+            "link": ""
+          }
+        },
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/MGC_Non_Comedogenic.png",
+            "link": ""
+          }
+        },
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/MGC_Australian_Owned.png",
+            "link": ""
+          }
+        },
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-4": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/MGC_Cruelty_Free.png",
+            "link": ""
+          }
+        },
+        "828da3ae-0b86-4ccd-bd77-8920ee94c4f0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/MGC_Paraben_Free.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-1",
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-2",
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-3",
+        "template--16004505436335__e2115bd7-c7be-4c67-a22e-42066d0d119b-logo_image-4",
+        "828da3ae-0b86-4ccd-bd77-8920ee94c4f0"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "divider": false
+      }
+    },
+    "ccb1fce8-c843-4ab8-863c-3279be2179cc": {
+      "type": "newsletter",
+      "blocks": {
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-title-1": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up let's be friends",
+            "heading_size": "h2"
+          }
+        },
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special promotions, exclusive new launches, and once-in-a-lifetime deals.</p>"
+          }
+        },
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-form-1": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-title-1",
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-text-1",
+        "template--16004505436335__ccb1fce8-c843-4ab8-863c-3279be2179cc-form-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "right",
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "top_padding": true,
+        "bottom_padding": true
+      }
+    },
+    "8a8ff7ad-f008-4f66-86b9-9ac557cf1a36": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16004505436335__8a8ff7ad-f008-4f66-86b9-9ac557cf1a36-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Follow Our Journey"
+          }
+        },
+        "c506f18c-c36a-423b-bf7a-5e3e90d1dfc1": {
+          "type": "button",
+          "settings": {
+            "link": "https://www.instagram.com/melissagigliotticosmetics/",
+            "link_text": "@melissagigliotticosmetics"
+          }
+        }
+      },
+      "block_order": [
+        "template--16004505436335__8a8ff7ad-f008-4f66-86b9-9ac557cf1a36-heading-1",
+        "c506f18c-c36a-423b-bf7a-5e3e90d1dfc1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "16988222199d6be98c": {
+      "type": "apps",
+      "blocks": {
+        "18343166-9100-454d-b8ef-dfe5b9d913cf": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": ["18343166-9100-454d-b8ef-dfe5b9d913cf"],
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "rich-text",
+    "promo-grid",
+    "c488a20d-b099-448e-8649-74b1525e2e0f",
+    "fc8ee44e-917e-4298-9798-1d6059b2f3d1",
+    "36f46cc0-93ae-4dc0-a4f9-8b09fe04f958",
+    "c4a7bd43-488c-484a-b089-f234a4c8c993",
+    "786eea08-553f-4f46-a4ba-6a8fcaa8e35f",
+    "e2115bd7-c7be-4c67-a22e-42066d0d119b",
+    "ccb1fce8-c843-4ab8-863c-3279be2179cc",
+    "8a8ff7ad-f008-4f66-86b9-9ac557cf1a36",
+    "16988222199d6be98c"
+  ]
+}

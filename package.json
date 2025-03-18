@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.8.3",
+    "husky": "~8.0.0",
+    "pretty-quick": "^4.1.1"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write '**/*.{liquid,css,js}'"
+  }
+}

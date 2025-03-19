@@ -3341,6 +3341,33 @@
         }
       }
     },
+    "fake_compare_price": {
+      "name": "Fake compare at price",
+      "settings": {
+        "fake_compare_price_enable":  {
+          "label": "Enable fake compare at price"
+        },
+        "fake_compare_price_list": {
+          "label": "Collections",
+          "info": "Select collections to show/hide fake compare at prices"
+        },
+        "fake_compare_price_inclusions": {
+          "label": "Inclusions selection",
+          "info": "Select to include or exclude the selected collections",
+          "options": {
+            "include": {
+              "label": "Include"
+            },
+            "exclude": {
+              "label": "Exclude"
+            }
+          }
+        },
+        "fake_compare_price_discounted":  {
+          "label": "Discounted percentage"
+        },
+      }
+    },
     "product_tiles": {
       "name": "Product tiles",
       "settings": {

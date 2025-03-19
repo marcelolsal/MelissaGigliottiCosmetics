@@ -181,11 +181,38 @@
                     </div>
                   {%- when 'price' -%}
                     <div class='product-block product-block--price' {{ block.shopify_attributes }}>
-                      {%- assign hide_sale_price = true -%}
-                      {%- if product.compare_at_price_max > product.price -%}
-                        {%- if current_variant.compare_at_price > current_variant.price -%}
+                      {%  if settings.fake_compare_price_enable %}
+                        {%- assign hide_sale_price = true -%}
+                        {%- assign discounted_price = current_variant.price -%}
+                        
+                        {% for collection in settings.fake_compare_price_list %}
+                          {% if settings.fake_compare_price_inclusions == 'include' %}
+                            {% if product.collections contains collection %}
+                              {% assign discounted_amount = current_variant.price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                              {% assign discounted_price = current_variant.price | minus: discounted_amount %}
+                              {% break %}
+                            {% endif %}
+                          {% else %}
+                            {% if product.collections contains collection %}
+                              {% assign discounted_price = current_variant.price %}
+                              {% break %}
+                            {% else %}
+                              {% assign discounted_amount = current_variant.price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                              {% assign discounted_price = current_variant.price | minus: discounted_amount %}
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                        
+                        {% if current_variant.compare_at_price > current_variant.price %}
+                          {% assign normal_price = current_variant.compare_at_price %}
+                        {% else %}
+                          {% assign normal_price = current_variant.price %}
+                        {% endif %}
+                        
+                        {%- if product.price > discounted_price and normal_price > discounted_price -%}
                           {%- assign hide_sale_price = false -%}
                         {%- endif -%}
+                        
                         <span
                           data-a11y-price
                           class='visually-hidden'
@@ -193,47 +220,97 @@
                         >
                           {{ 'products.general.regular_price' | t }}
                         </span>
+                        
                         <span data-product-price-wrap class='{% if hide_sale_price %} hide{% endif %}'>
                           <span data-compare-price class='product__price product__price--compare'>
-                            {%- if current_variant.compare_at_price > current_variant.price -%}
-                              {{ current_variant.compare_at_price | money }}
+                            {%- if normal_price > discounted_price -%}
+                              {{ normal_price | money }}
                             {%- endif -%}
                           </span>
                         </span>
+                        
                         <span data-compare-price-a11y class='visually-hidden'>
-                          {{- 'products.general.sale_price' | t -}}
+                          {{ 'products.general.sale_price' | t }}
                         </span>
-                      {%- else -%}
-                        <span data-a11y-price class='visually-hidden'>{{ 'products.general.regular_price' | t }}</span>
-                      {%- endif -%}
-
-                      <span
-                        data-product-price
-                        class='product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}'
-                      >
-                        {%- unless product.empty? -%}
-                          {{ current_variant.price | money }}
-                        {%- else -%}
-                          {{ 1999 | money }}
-                        {%- endunless -%}
-                      </span>
-
-                      {%- if settings.product_save_amount -%}
-                        {%- if settings.product_save_type == 'dollar' -%}
-                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
-                        {%- else -%}
-                          {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
-                        {%- endif -%}
-                        <span data-save-price class='product__price-savings{% if hide_sale_price %} hide{% endif %}'>
-                          {%- unless hide_sale_price -%}
-                            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                        
+                        <span
+                          data-product-price
+                          class='product__price{% if normal_price > discounted_price %} on-sale{% endif %}'
+                        >
+                          {%- unless product.empty? -%}
+                            {{ discounted_price | money }}
+                          {%- else -%}
+                            {{ 1999 | money }}
                           {%- endunless -%}
                         </span>
-                      {%- endif -%}
+                        
+                        {%- if settings.product_save_amount -%}
+                          {%- if settings.product_save_type == 'dollar' -%}
+                            {%- capture saved_amount -%}{{ normal_price | minus: discounted_price | money }}{%- endcapture -%}
+                          {%- else -%}
+                            {%- capture saved_amount -%}{{ normal_price | minus: discounted_price | times: 100.0 | divided_by: normal_price | round }}%{%- endcapture -%}
+                          {%- endif -%}
+                        
+                          <span data-save-price class='product__price-savings{% if hide_sale_price %} hide{% endif %}'>
+                            {%- unless hide_sale_price -%}
+                              {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                            {%- endunless -%}
+                          </span>
+                        {%- endif -%}                        
+                      {%  else %}
+                        {%- assign hide_sale_price = true -%}
+                        {%- if product.compare_at_price_max > product.price -%}
+                          {%- if current_variant.compare_at_price > current_variant.price -%}
+                            {%- assign hide_sale_price = false -%}
+                          {%- endif -%}
+                          <span
+                            data-a11y-price
+                            class='visually-hidden'
+                            aria-hidden='{{ hide_sale_price }}'
+                          >
+                            {{ 'products.general.regular_price' | t }}
+                          </span>
+                          <span data-product-price-wrap class='{% if hide_sale_price %} hide{% endif %}'>
+                            <span data-compare-price class='product__price product__price--compare'>
+                              {%- if current_variant.compare_at_price > current_variant.price -%}
+                                {{ current_variant.compare_at_price | money }}
+                              {%- endif -%}
+                            </span>
+                          </span>
+                          <span data-compare-price-a11y class='visually-hidden'>
+                            {{- 'products.general.sale_price' | t -}}
+                          </span>
+                        {%- else -%}
+                          <span data-a11y-price class='visually-hidden'>{{ 'products.general.regular_price' | t }}</span>
+                        {%- endif -%}
 
+                        <span
+                          data-product-price
+                          class='product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}'
+                        >
+                          {%- unless product.empty? -%}
+                            {{ current_variant.price | money }}
+                          {%- else -%}
+                            {{ 1999 | money }}
+                          {%- endunless -%}
+                        </span>
+
+                        {%- if settings.product_save_amount -%}
+                          {%- if settings.product_save_type == 'dollar' -%}
+                            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
+                          {%- else -%}
+                            {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | times: 100.0 | divided_by: current_variant.compare_at_price | round }}%{%- endcapture -%}
+                          {%- endif -%}
+                          <span data-save-price class='product__price-savings{% if hide_sale_price %} hide{% endif %}'>
+                            {%- unless hide_sale_price -%}
+                              {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                            {%- endunless -%}
+                          </span>
+                        {%- endif -%}
+                      {% endif %}
                       <div
-                        data-unit-price-wrapper
-                        class='product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}'
+                      data-unit-price-wrapper
+                      class='product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}'
                       >
                         {%- capture unit_price_base_unit -%}
                           <span data-unit-base>

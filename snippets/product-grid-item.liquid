@@ -27,6 +27,23 @@
   if product.compare_at_price > product.price
     assign on_sale = true
   endif
+  if settings.fake_compare_price_enable 
+    for collection in settings.fake_compare_price_list 
+      if settings.fake_compare_price_inclusions == 'include'
+        if product.collections contains collection
+          assign on_sale = true
+          break
+        endif
+      else
+        if product.collections contains collection
+          assign on_sale = false
+          break
+        else
+          assign on_sale = true
+        endif
+      endif
+    endfor
+  endif
 
   assign product_tags = product.tags | join: ','
   assign has_custom_label = false
@@ -204,22 +221,94 @@
           <div class='grid-product__price'>
             {%- if on_sale -%}
               <span class='visually-hidden'>{{ 'products.general.regular_price' | t }}</span>
-              <span class='grid-product__price--original'>{{ product.compare_at_price | money }}</span>
+              {% if settings.fake_compare_price_enable %}
+                  <span class='grid-product__price--original'>{{ product.price | money }}</span>
+              {%  else %}                
+                <span class='grid-product__price--original'>{{ product.compare_at_price | money }}</span>
+              {% endif %}
               <span class='visually-hidden'>{{ 'products.general.sale_price' | t }}</span>
             {%- endif -%}
-            {%- if product.price_varies -%}
-              {%- assign price = product.price_min | money -%}
-              {{ 'products.general.from_text_html' | t: price: price }}
-            {%- else -%}
-              {{ product.price | money }}
-            {%- endif -%}
+            {% if settings.fake_compare_price_enable %}
+              {%- if product.price_varies -%}
+                {%- assign price = product.price_min -%}
+              {%- else -%}
+                {%- assign price = product.price -%}
+              {%- endif -%}
+              {%- assign discounted_price = price -%}
+
+              {% for collection in settings.fake_compare_price_list %}
+                {% if settings.fake_compare_price_inclusions == 'include' %}
+                  {% if product.collections contains collection %}
+                    {% assign discounted_amount = price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                    {% assign discounted_price = price | minus: discounted_amount %}
+                    {% break %}
+                  {% endif %}
+                {% else %}
+                  {% if product.collections contains collection %}
+                    {% assign discounted_price = price %}
+                    {% break %}
+                  {% else %}
+                    {% assign discounted_amount = price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                    {% assign discounted_price = price | minus: discounted_amount %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+
+               {{ discounted_price | money }}
+            {% else %}
+              {%- if product.price_varies -%}
+                {%- assign price = product.price_min | money -%}
+                {{ 'products.general.from_text_html' | t: price: price }}
+              {%- else -%}
+                {{ product.price | money }}
+              {%- endif -%}
+            {% endif %}
             {%- if on_sale -%}
               {%- if settings.product_save_amount -%}
-                {%- if settings.product_save_type == 'dollar' -%}
-                  {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
-                {%- else -%}
-                  {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
-                {%- endif -%}
+                {% if settings.fake_compare_price_enable %}
+                  {%- if product.price_varies -%}
+                    {%- assign price = product.price_min -%}
+                  {%- else -%}
+                    {%- assign price = product.price -%}
+                  {%- endif -%}
+                  {%- assign discounted_price = price -%}
+  
+                  {% for collection in settings.fake_compare_price_list %}
+                    {% if settings.fake_compare_price_inclusions == 'include' %}
+                      {% if product.collections contains collection %}
+                        {% assign discounted_amount = price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                        {% assign discounted_price = price | minus: discounted_amount %}
+                        {% break %}
+                      {% endif %}
+                    {% else %}
+                      {% if product.collections contains collection %}
+                        {% assign discounted_price = price %}
+                        {% break %}
+                      {% else %}
+                        {% assign discounted_amount = price | times: settings.fake_compare_price_discounted | divided_by: 100 %}
+                        {% assign discounted_price = price | minus: discounted_amount %}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if product.compare_at_price > product.price %}
+                    {% assign normal_price = product.compare_at_price %}
+                  {% else %}
+                    {% assign normal_price = product.price %}
+                  {% endif %}
+                
+                  {%- if settings.product_save_type == 'dollar' -%}
+                    {%- capture saved_amount -%}{{ normal_price | minus: discounted_price | money }}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture saved_amount -%}{{ normal_price | minus: discounted_price | times: 100.0 | divided_by: normal_price | round }}%{%- endcapture -%}
+                  {%- endif -%}
+                {%  else %}
+                  {%- if settings.product_save_type == 'dollar' -%}
+                    {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+                  {%- else -%}
+                    {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
+                  {%- endif -%}
+                {% endif %}
                 <span class='grid-product__price--savings'>
                   {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
                 </span>

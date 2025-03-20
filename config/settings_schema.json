@@ -587,6 +587,48 @@
     ]
   },
   {
+    "name": "t:settings_schema.fake_compare_price.name",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "fake_compare_price_enable",
+        "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_enable.label"
+      },
+      {
+        "type": "collection_list",
+        "id": "fake_compare_price_list",
+        "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_list.label",
+        "info": "t:settings_schema.fake_compare_price.settings.fake_compare_price_list.info",
+      }, 
+      {
+        "type": "select",
+        "id": "fake_compare_price_inclusions",
+        "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_inclusions.label", 
+        "info": "t:settings_schema.fake_compare_price.settings.fake_compare_price_inclusions.info",
+        "options": [
+          {
+            "value": "include",
+            "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_inclusions.options.include.label"
+          },
+          {
+            "value": "exclude",
+            "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_inclusions.options.exclude.label"
+          }
+        ]
+      }, 
+      {
+        "type": "range",
+        "id": "fake_compare_price_discounted",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "default": 20,
+        "unit": "%",
+        "label": "t:settings_schema.fake_compare_price.settings.fake_compare_price_discounted.label",
+      }
+  ]
+  },
+  {
     "name": "t:settings_schema.product_tiles.name",
     "settings": [
       {
